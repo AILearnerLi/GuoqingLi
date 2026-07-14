@@ -1,0 +1,237 @@
+ <!DOCTYPE html>
+ <html lang="zh-CN">
+ <head>
+   <meta charset="UTF-8" />
+   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   <meta name="description" content="Guoqing Li &mdash; Academic Homepage" />
+   <meta name="author" content="Guoqing Li" />
+ 
+   <!-- Open Graph -->
+   <meta property="og:title" content="Guoqing Li &mdash; Academic Homepage" />
+   <meta property="og:description" content="Senior Engineer at Shandong Cloud Sea Guochuang. Research on machine learning, hardware accelerators, and AI for EDA." />
+   <meta property="og:type" content="website" />
+ 
+   <!-- Fonts -->
+   <link rel="preconnect" href="https://fonts.googleapis.com" />
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300..700&family=Noto+Sans+SC:wght@300..700&display=swap" rel="stylesheet" />
+ 
+   <!-- Font Awesome (icons) -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+ 
+   <link rel="stylesheet" href="css/style.css" />
+   <title>Guoqing Li &mdash; Academic Homepage</title>
+ </head>
+ <body>
+ 
+   <!-- ============ NAVIGATION ============ -->
+   <nav class="navbar" id="navbar">
+     <div class="container nav-container">
+       <a href="#hero" class="nav-logo">Guoqing Li</a>
+       <ul class="nav-links" id="nav-links">
+         <li><a href="#about" class="nav-link">About</a></li>
+         <li><a href="#research" class="nav-link">Research</a></li>
+         <li><a href="#publications" class="nav-link">Publications</a></li>
+         <li><a href="#experience" class="nav-link">Experience</a></li>
+         <li><a href="#contact" class="nav-link">Contact</a></li>
+       </ul>
+       <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation">
+         <span></span>
+         <span></span>
+         <span></span>
+       </button>
+     </div>
+   </nav>
+ 
+   <!-- ============ HERO ============ -->
+   <section class="hero" id="hero">
+     <div class="container hero-container">
+       <div class="hero-photo-wrapper">
+         <div class="hero-photo">
+           <img src="assets/photo.jpg" alt="Guoqing Li" onerror="this.style.display='none'; document.getElementById('photo-placeholder').style.display='flex'" />
+           <div class="photo-placeholder" id="photo-placeholder" style="display:none;">
+             <i class="fas fa-user-graduate"></i>
+           </div>
+         </div>
+       </div>
+       <div class="hero-text">
+         <h1 class="hero-name">李国庆 &nbsp;Guoqing Li</h1>
+         <p class="hero-title">正高级工程师</p>
+         <p class="hero-affiliation">
+           <i class="fas fa-building"></i> 山东云海国创云计算装备产业创新中心有限公司
+         </p>
+         <div class="hero-badges">
+           <span class="badge"><i class="fa-solid fa-microchip"></i> Hardware Accelerator</span>
+           <span class="badge"><i class="fa-solid fa-brain"></i> Machine Learning</span>
+           <span class="badge"><i class="fa-solid fa-microchip"></i> AI for EDA</span>
+         </div>
+         <div class="hero-actions">
+           <a href="#publications" class="btn btn-primary">
+             <i class="fa-solid fa-file-lines"></i> Publications
+           </a>
+           <a href="assets/cv.pdf" class="btn btn-outline">
+             <i class="fa-solid fa-download"></i> CV
+           </a>
+         </div>
+       </div>
+     </div>
+   </section>
+ 
+   <!-- ============ ABOUT ============ -->
+   <section class="section" id="about">
+     <div class="container">
+       <h2 class="section-title"><span class="section-number">01</span> About Me</h2>
+       <div class="section-divider"></div>
+       <div class="about-content">
+         <p>
+           Dr. Guoqing Li is a <strong>正高级工程师</strong> (Professor-level Senior Engineer) at
+           <strong>山东云海国创云计算装备产业创新中心有限公司</strong>.
+           He received his Ph.D. from <strong>Southeast University (东南大学)</strong> in 2022.
+         </p>
+         <p>
+           Dr. Li&rsquo;s research lies at the intersection of <strong>machine learning</strong>,
+           <strong>hardware accelerator</strong> design, and <strong>AI for EDA</strong>.
+           His work focuses on developing efficient computing architectures and AI-driven methodologies
+           to accelerate chip design workflows, optimize hardware-software co-design, and build
+           high-performance computing platforms for cloud-scale AI workloads.
+         </p>
+         <p>
+           He is particularly interested in bridging the gap between emerging AI algorithms and
+           efficient hardware implementations, with applications spanning from neural network processors
+           to AI-assisted EDA tools for next-generation semiconductor design.
+         </p>
+       </div>
+     </div>
+   </section>
+ 
+   <!-- ============ RESEARCH INTERESTS ============ -->
+   <section class="section section-alt" id="research">
+     <div class="container">
+       <h2 class="section-title"><span class="section-number">02</span> Research Interests</h2>
+       <div class="section-divider"></div>
+       <div class="research-grid">
+         <div class="research-card">
+           <div class="research-icon"><i class="fa-solid fa-microchip"></i></div>
+           <h3>Hardware Accelerator</h3>
+           <p>Design and optimization of domain-specific accelerators (FPGA / ASIC) for AI workloads, including neural network processors, dataflow architectures, and memory hierarchy optimization.</p>
+           <div class="research-tags">
+             <span class="tag">FPGA</span>
+             <span class="tag">ASIC</span>
+             <span class="tag">Dataflow Architecture</span>
+             <span class="tag">Memory Optimization</span>
+           </div>
+         </div>
+         <div class="research-card">
+           <div class="research-icon"><i class="fa-solid fa-brain"></i></div>
+           <h3>Machine Learning</h3>
+           <p>Efficient deployment and acceleration of machine learning models, including model compression, quantization, pruning, and hardware-aware neural architecture search.</p>
+           <div class="research-tags">
+             <span class="tag">Model Compression</span>
+             <span class="tag">Quantization</span>
+             <span class="tag">Pruning</span>
+             <span class="tag">NAS</span>
+           </div>
+         </div>
+         <div class="research-card">
+           <div class="research-icon"><i class="fa-solid fa-microchip"></i></div>
+           <h3>AI for EDA</h3>
+           <p>Applying machine learning techniques to electronic design automation, including AI-driven logic synthesis, placement and routing optimization, design space exploration, and predictive modeling for chip design workflows.</p>
+           <div class="research-tags">
+             <span class="tag">Logic Synthesis</span>
+             <span class="tag">ML for EDA</span>
+             <span class="tag">Design Space Exploration</span>
+             <span class="tag">Predictive Modeling</span>
+           </div>
+         </div>
+       </div>
+     </div>
+   </section>
+ 
+   <!-- ============ PUBLICATIONS ============ -->
+   <section class="section" id="publications">
+     <div class="container">
+       <h2 class="section-title"><span class="section-number">03</span> Publications</h2>
+       <div class="section-divider"></div>
+ 
+       <div class="pub-filter">
+         <button class="pub-filter-btn active" data-filter="all">All</button>
+         <button class="pub-filter-btn" data-filter="2025">2025</button>
+         <button class="pub-filter-btn" data-filter="2024">2024</button>
+         <button class="pub-filter-btn" data-filter="2023">2023</button>
+         <button class="pub-filter-btn" data-filter="2022">2022</button>
+         <button class="pub-filter-btn" data-filter="2021">&le; 2021</button>
+       </div>
+ 
+       <div class="publications-list" id="publications-list">
+         <!-- Publication items are generated by JS -->
+       </div>
+     </div>
+   </section>
+ 
+   <!-- ============ EXPERIENCE ============ -->
+   <section class="section section-alt" id="experience">
+     <div class="container">
+       <h2 class="section-title"><span class="section-number">04</span> Experience &amp; Education</h2>
+       <div class="section-divider"></div>
+       <div class="timeline">
+         <div class="timeline-item">
+           <div class="timeline-marker"></div>
+           <div class="timeline-content">
+             <span class="timeline-date">2022 &ndash; Present</span>
+             <h3>正高级工程师</h3>
+             <p class="timeline-sub">山东云海国创云计算装备产业创新中心有限公司</p>
+             <p>Hardware accelerator design, AI for EDA, and machine learning research &amp; development.</p>
+           </div>
+         </div>
+         <div class="timeline-item">
+           <div class="timeline-marker"></div>
+           <div class="timeline-content">
+             <span class="timeline-date">2018 &ndash; 2022</span>
+             <h3>Ph.D. in 电子科学与技术 / Computer Engineering</h3>
+             <p class="timeline-sub">东南大学 (Southeast University)</p>
+           </div>
+         </div>
+       </div>
+     </div>
+   </section>
+ 
+   <!-- ============ CONTACT ============ -->
+   <section class="section" id="contact">
+     <div class="container">
+       <h2 class="section-title"><span class="section-number">05</span> Contact</h2>
+       <div class="section-divider"></div>
+       <div class="contact-content">
+         <p class="contact-intro">
+           Feel free to reach out if you are interested in collaboration or have any questions.
+         </p>
+         <div class="contact-links">
+           <a href="mailto:liguoqing01@inspur.com" class="contact-item">
+             <i class="fa-solid fa-envelope"></i>
+             <span>liguoqing01@inspur.com</span>
+           </a>
+           <a href="https://scholar.google.com/citations?user=YOUR_ID" target="_blank" class="contact-item" rel="noopener">
+             <i class="fa-brands fa-google-scholar"></i>
+             <span>Google Scholar</span>
+           </a>
+           <a href="https://github.com/yourusername" target="_blank" class="contact-item" rel="noopener">
+             <i class="fa-brands fa-github"></i>
+             <span>GitHub</span>
+           </a>
+         </div>
+       </div>
+     </div>
+   </section>
+ 
+   <!-- ============ FOOTER ============ -->
+   <footer class="footer">
+     <div class="container footer-container">
+       <p>&copy; 2026 Guoqing Li. All rights reserved.</p>
+       <p class="footer-built-with">
+         Built with <i class="fa-solid fa-heart"></i> using HTML, CSS &amp; JavaScript.
+       </p>
+     </div>
+   </footer>
+ 
+   <script src="js/main.js"></script>
+ </body>
+ </html>
